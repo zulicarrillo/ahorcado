@@ -13,7 +13,6 @@ class Ahorcado
 	def obtenerCantidadLetras()
 	@cantidadLetras
 	end
-
 	def verificar(letra)
 		if @palabra.include? letra
 	   	  "incluye"
