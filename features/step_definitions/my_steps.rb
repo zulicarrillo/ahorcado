@@ -10,5 +10,8 @@ Then(/^quiero ver la cantidad de letras de la palabra secreta sea "(.*?)"$/) do 
   last_response.body.should =~ /#{arg1}/m
 end
 
+Then(/^quiero un texto que diga "(.*?)"$/) do |arg1|
+ last_response.body.should =~ /#{arg1}/m
+end
 
 

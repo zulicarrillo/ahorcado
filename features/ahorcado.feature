@@ -6,5 +6,5 @@ Feature: Ahorcado
 
 	Scenario: Ingresar letra de palabra secreta
 	Given Estoy en la pagina de inicio
-	Then quiero un texto que diga "ingrese letra"
+	Then quiero un texto que diga "Ingrese Letra"
 
