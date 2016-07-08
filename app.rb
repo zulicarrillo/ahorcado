@@ -5,7 +5,8 @@ configure do
 	@@ahorcado=Ahorcado.new
 end
 get '/' do
+    @letra= @@ahorcado.obtenerCantidadLetras
 	erb:ahorcado
-"Palabra Secreta " +
-" Cantidad de letras #{@@ahorcado.obtenerCantidadLetras}"
 end
+
+
