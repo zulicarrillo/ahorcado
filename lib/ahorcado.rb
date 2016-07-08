@@ -14,10 +14,10 @@ class Ahorcado
 	@cantidadLetras
 	end
 	def verificar(letra)
-		if @palabra.include? letra
-	   	  "incluye"
-		else
-		  "no incluye"
-		end
+	#	if @palabra.include? letra
+	#  	  "incluye"
+	#	else
+	#	  "no incluye"
+	#	end
 	end
 end
