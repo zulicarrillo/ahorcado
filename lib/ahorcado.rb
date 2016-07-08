@@ -13,5 +13,4 @@ class Ahorcado
 	def obtenerCantidadLetras()
 	@cantidadLetras
 	end
-
 end
