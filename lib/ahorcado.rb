@@ -3,6 +3,7 @@ class Ahorcado
 	@ary = ["autos", "arbol", "gatos", "reloj"] 
 	@palabra=@ary.sample
 	@cantidadLetras= @palabra.length
+	@palabraJugador=""
 	end
 
 	def obtenerPalabra()
@@ -11,5 +12,13 @@ class Ahorcado
 	
 	def obtenerCantidadLetras()
 	@cantidadLetras
+	end
+
+	def verificar(letra)
+		if @palabra.include? letra
+	   	  "incluye"
+		else
+		  "no incluye"
+		end
 	end
 end
