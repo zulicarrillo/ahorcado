@@ -7,7 +7,7 @@ end
 get '/' do
     @letra= @@ahorcado.obtenerCantidadLetras
 	@palabra= @@ahorcado.obtenerPalabra
-	#@palabraJugador=@@ahorcado.obtenerPalabraJugador
+	@palabraJugador=@@ahorcado.obtenerPalabraJugador
 	erb:ahorcado
 end
 
