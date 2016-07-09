@@ -19,17 +19,7 @@ describe Ahorcado do
 			palabra.should =="a**o*"
 	end
 
-	it "dmostrar gano juego" do
-			ahorcado= Ahorcado.new()
-			ahorcado.jugar("o")
-          ahorcado.jugar("u")
-		ahorcado.jugar("t")
-	ahorcado.jugar("a")
-ahorcado.jugar("s")
-palabra=ahorcado.obtenerMensaje()
-palabra.should=="Gano"
-			
-	end
+
 
 it "dmostrar perdio juego" do
 			ahorcado= Ahorcado.new()

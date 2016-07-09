@@ -1,6 +1,6 @@
 class Ahorcado
 	def initialize
-	@ary = ["autos", "arbol", "altos", "aeloj"] 
+	@ary = ["autos", "arbol", "altos", "reloj"] 
 	@palabra=@ary.sample
 	#@palabra="autos"
     @cantidadFallidos=0
