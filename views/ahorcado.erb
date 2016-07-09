@@ -1,16 +1,16 @@
 <b>Palabra secreta</b>
 <br/><br/>
-<form>
-Cantidad de letras: <%=@letra%>
+<form method='post' action='/verificar'>
+Cantidad de letras: <%=@cantLetras%>
 <br/><br/>
 Ingrese Letra
 <br/><br/>
-<input type='text'/>
+<input type='text'  name='letra'/>
 <br/>
 <input type='submit' value='Verificar'/>
 <br/><br/>
 Ud ha ingresado la palabra: <b><%=@palabraJugador%></b>
-<br/>
-y la palabra secreta es: <%=@palabra%>
+<br/><br/>
+<b><%=@mensajeJuego%></b>
 </form>
 

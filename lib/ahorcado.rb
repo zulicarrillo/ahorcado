@@ -1,11 +1,15 @@
 class Ahorcado
 	def initialize
+
 	@ary = ["autos", "arbol", "gatos", "reloj"] 
-    @pos=rand(@ry.length)
+    @pos=rand(@ary.size())
 	@palabra=@ary[@pos]
 	@pista= ["tienen Cuatro Ruedas","es verde y frondoso","es felino","marca las horas"]
 	#@palabra="autos"
     @palabraPista=@pista[@pos]
+	@ary = ["autos", "arbol", "altos", "reloj"] 
+	@palabra=@ary.sample
+	#@palabra="autos"
     @cantidadFallidos=0
 	@cantidadPermitidos=6
 	@cantidadLetras= @palabra.length
@@ -13,11 +17,19 @@ class Ahorcado
 	@mensajeJuego=""
 	iniciarPalabraJugador()
 	end
-
+    def obtenerFallidos()
+	@cantidadFallidos
+	end 
+	 def obtenerPermitidos()
+	@cantidadPermitidos
+	end	
 	def obtenerMensaje()
 	@mensajeJuego
 	end
-
+    def obtenerPista()
+    @cantidadFallidos+=1
+	@palabraPista
+	end
 	def obtenerPalabra()
 	@palabra
 	end

@@ -8,8 +8,8 @@ Feature: Ahorcado
 	Given Estoy en la pagina de inicio
 	Then quiero un texto que diga "Ingrese Letra"
 
-	Scenario: Mostrar la palabra que ingresa el jugador
+	Scenario: Mostrar la letra que ingresa el jugador
 	Given Estoy en la pagina de inicio
-	Then quiero ver que la palabra ingresada sea "o"
+	Then quiero ver que la letra ingresada sea "o"
 
 
