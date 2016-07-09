@@ -16,10 +16,20 @@ post '/verificar' do
 	@letra = params[:letra]	
 	@@ahorcado.jugar(@letra)
 	@palabraJugador=@@ahorcado.obtenerPalabraJugador
+	@cantidadFallidos=@@ahorcado.obtenerFallidos
+	@cantidadPermitidos=@@ahorcado.obtenerPermitidos
     @mensajeJuego=@@ahorcado.obtenerMensaje
     erb:ahorcado
 end
 
+post '/pista' do
+	@pista=@@ahorcado.obtenerPista
+	@palabraJugador=@@ahorcado.obtenerPalabraJugador
+	@cantidadFallidos=@@ahorcado.obtenerFallidos
+	@cantidadPermitidos=@@ahorcado.obtenerPermitidos
+	@mensajeJuego=@@ahorcado.obtenerMensaje
+    erb:ahorcado
+end
 
 
 
