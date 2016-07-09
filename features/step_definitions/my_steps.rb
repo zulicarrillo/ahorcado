@@ -14,4 +14,8 @@ Then(/^quiero un texto que diga "(.*?)"$/) do |arg1|
  last_response.body.should =~ /#{arg1}/m
 end
 
+Then(/^quiero ver que la palabra ingresada sea "(.*?)"$/) do |arg1|
+  last_response.body.should =~ /#{arg1}/m
+end
+
 
