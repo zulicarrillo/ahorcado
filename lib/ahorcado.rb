@@ -2,11 +2,19 @@ class Ahorcado
 	def initialize
 	@ary = ["autos", "arbol", "altos", "aeloj"] 
 	@palabra=@ary.sample
-	#@palabra="auto"
+	@palabra="autos"
+   @cantidadFallidos=0
+	@cantidadPermitidos=6
 	@cantidadLetras= @palabra.length
 	@palabraJugador=""
+	@mensajeJuego=""
 	iniciarPalabraJugador()
 	end
+
+	def obtenerMensaje()
+	@mensajeJuego
+	end
+
 	def obtenerPalabra()
 	@palabra
 	end
@@ -46,6 +54,26 @@ class Ahorcado
 				end
 			i=i+1
 			end
+		else
+         @cantidadFallidos+=1 		
 		end
 	 end
+
+	def jugar(letra)
+         if @cantidadFallidos<@cantidadPermitidos
+             remplazarLetra(letra)
+				if @cantidadFallidos<@cantidadPermitidos
+				     if @palabra==@palabraJugador
+					 
+                     @mensajeJuego="Gano"
+					 end	
+                else 
+                    @mensajeJuego="Perdiste" 				
+				end
+
+          else
+             @mensajeJuego="Perdiste"
+			end        
+		
+	end
 end
