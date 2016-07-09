@@ -15,26 +15,47 @@ class Ahorcado
 	@cantidadLetras= @palabra.length
 	@palabraJugador=""
 	@mensajeJuego=""
+    @palabraMostrar=""
 	iniciarPalabraJugador()
 	end
+
     def obtenerFallidos()
 	@cantidadFallidos
 	end 
+
 	 def obtenerPermitidos()
 	@cantidadPermitidos
 	end	
+
 	def obtenerMensaje()
 	@mensajeJuego
 	end
+
     def obtenerPista()
     @cantidadFallidos+=1
+ 	if @cantidadFallidos>@cantidadPermitidos
+    @mensajeJuego="Perdiste"
+	end
 	@palabraPista
 	end
 	def obtenerPalabra()
 	@palabra
 	end
 	def obtenerPalabraJugador()
-	@palabraJugador
+     @palabraMostrar=""
+     i = 0
+		num = @cantidadLetras
+		while i < num  do	
+		 aux=@palabraJugador[i]
+				if("*"==aux)
+					 @palabraMostrar=@palabraMostrar+"- "
+				else
+						@palabraMostrar=@palabraMostrar+aux+" "
+				end
+			i=i+1
+		end
+     
+	@palabraMostrar
 	end
 
 	def obtenerCantidadLetras()
