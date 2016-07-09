@@ -3,13 +3,13 @@ describe Ahorcado do
 	it "deberia mostrar true existe letra" do
 			ahorcado= Ahorcado.new()
 			palabra=ahorcado.obtenerPalabra()
-			resultado=ahorcado.verificar("l")
-			resultado.should ==false
+			resultado=ahorcado.verificar("o")
+			resultado.should ==true
 	end
 	it "deberia mostrar palabra jugador *****" do
 			ahorcado= Ahorcado.new()
 			palabra=ahorcado.obtenerPalabraJugador()
-			palabra.should =="****"
+			palabra.should =="*****"
 	end
 
 end

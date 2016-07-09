@@ -4,7 +4,7 @@ class Ahorcado
 	@palabra=@ary.sample
 	#@palabra="auto"
 	@cantidadLetras= @palabra.length
-	@palabraJugador="autos"
+	@palabraJugador=""
 	iniciarPalabraJugador()
 	end
 	def obtenerPalabra()
