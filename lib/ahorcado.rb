@@ -7,8 +7,6 @@ class Ahorcado
 	@pista= ["tienen Cuatro Ruedas","es verde y frondoso","es felino","marca las horas"]
 	#@palabra="autos"
     @palabraPista=@pista[@pos]
-	@ary = ["autos", "arbol", "altos", "reloj"] 
-	@palabra=@ary.sample
 	#@palabra="autos"
     @cantidadFallidos=0
 	@cantidadPermitidos=6
@@ -34,7 +32,8 @@ class Ahorcado
     def obtenerPista()
     @cantidadFallidos+=1
  	if @cantidadFallidos>@cantidadPermitidos
-    @mensajeJuego="Perdiste"
+    @mensajeJuego="Perdiste palabra secreta:"+@palabra
+
 	end
 	@palabraPista
 	end
@@ -104,11 +103,11 @@ class Ahorcado
                      @mensajeJuego="Gano"
 					 end	
                 else 
-                    @mensajeJuego="Perdiste" 				
+                    @mensajeJuego="Perdiste palabra secreta:"+@palabra				
 				end
 
           else
-             @mensajeJuego="Perdiste"
+             @mensajeJuego="Perdiste palabra secreta:"+@palabra
 			end        
 		
 	end

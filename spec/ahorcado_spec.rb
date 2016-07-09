@@ -7,22 +7,7 @@ describe Ahorcado do
 			resultado.should ==true
 	end
 
-
-
-
-
-it "dmostrar perdio juego" do
-			ahorcado= Ahorcado.new()
-			ahorcado.jugar("x")
-          ahorcado.jugar("x")
-		ahorcado.jugar("x")
-			ahorcado.jugar("x")
-		ahorcado.jugar("x")
-		ahorcado.jugar("x")
-		palabra=ahorcado.obtenerMensaje()
-		palabra.should=="Perdiste"
-end
- it "deberia mostrar palabra pista *****" do
+it "deberia mostrar palabra pista *****" do
 			ahorcado= Ahorcado.new()
 			ahorcado.jugar("o")
 			palabra=ahorcado.obtenerPalabraJugador()
