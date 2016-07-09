@@ -2,8 +2,8 @@ class Ahorcado
 	def initialize
 	@ary = ["autos", "arbol", "altos", "aeloj"] 
 	@palabra=@ary.sample
-	@palabra="autos"
-   @cantidadFallidos=0
+	#@palabra="autos"
+    @cantidadFallidos=0
 	@cantidadPermitidos=6
 	@cantidadLetras= @palabra.length
 	@palabraJugador=""
